@@ -1,107 +1,551 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier First View Controller - First-->
+        <!--First View Controller - Study-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cfe-aU-m0O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qth-GD-NF2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lzy-U0-3cq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="20" y="250" width="728" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="250" y="350" width="268" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="268" id="d69-P2-Fm8"/>
-                                    <constraint firstAttribute="height" constant="70" id="inD-1n-nj2"/>
-                                </constraints>
-                                <string key="text">Loaded by the First View Controller — an instance of FirstViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animalcell.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bwW-bn-d2y">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A68-QL-yh3" userLabel="Hide">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hide:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7lp-DG-8KL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpu-ks-f8q" userLabel="Vacuole">
+                                <rect key="frame" x="138" y="196" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vacule:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LHI-3v-7AU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q0-M8-Er8" userLabel="Ribosomes">
+                                <rect key="frame" x="78" y="252" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ribosome:" destination="9pv-A4-QxB" eventType="touchUpInside" id="geh-AR-cfD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-JL-xa1" userLabel="Rough ER">
+                                <rect key="frame" x="46" y="312" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rougher:" destination="9pv-A4-QxB" eventType="touchUpInside" id="GMK-g0-hht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-1e-78f" userLabel="Mitochondrion">
+                                <rect key="frame" x="37" y="793" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mitochondrion:" destination="9pv-A4-QxB" eventType="touchUpInside" id="DZx-DQ-jiV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkC-e0-Sq7" userLabel="Smooth ER">
+                                <rect key="frame" x="69" y="862" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="smoother:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mbY-w1-Gp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-fG-vP2" userLabel="Cell Membrane">
+                                <rect key="frame" x="294" y="931" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cellmembrane:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7SM-Xq-v7d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrw-hw-uhN" userLabel="Lysosome">
+                                <rect key="frame" x="477" y="930" width="128" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lysosome:" destination="9pv-A4-QxB" eventType="touchUpInside" id="PXm-Gf-ybY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kj-1B-Wc8" userLabel="Nuclear Membrane">
+                                <rect key="frame" x="503" y="817" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nuclearmembrane:" destination="9pv-A4-QxB" eventType="touchUpInside" id="80u-Xd-iwi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-kS-XgL" userLabel="Nucleus">
+                                <rect key="frame" x="522" y="745" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nucleus:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YyA-c7-dNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sf-gA-wfV" userLabel="Nucleous">
+                                <rect key="frame" x="547" y="685" width="128" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nucleous:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ydl-5O-AOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmW-y1-tdk" userLabel="Cytoplasm">
+                                <rect key="frame" x="582" y="614" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cytoplasm:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Qtz-Lc-BGK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j26-8W-zcS" userLabel="Golgi Apparatus">
+                                <rect key="frame" x="606" y="283" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="golgiapparatus:" destination="9pv-A4-QxB" eventType="touchUpInside" id="rt6-ph-fe7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNW-xe-bpI" userLabel="Golgi Vesicle">
+                                <rect key="frame" x="588" y="229" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="golgivesicle:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ulZ-hy-rXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-T8-tSB" userLabel="Centrioles">
+                                <rect key="frame" x="561" y="168" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="centrioles:" destination="9pv-A4-QxB" eventType="touchUpInside" id="CLk-rZ-Nq2"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Contains ribosomes used to transport proteins and other materials throughout the cell" translatesAutoresizingMaskIntoConstraints="NO" id="EK6-83-QhT" userLabel="Def Rough ER">
+                                <rect key="frame" x="331" y="416" width="240" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-d4-Ar2">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                                <items/>
-                            </toolbar>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j55-Ia-Nab" userLabel="Def Mitochondrion">
+                                <rect key="frame" x="243" y="529" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">This mitochondrian consists of two phospholipid bilayers.
+
+Mitochondria are the powerhouses of a cell, and are responsible for the breakdown of sugar molecules to release ATP (adenosine triphosphate), which is used to transport energy within the cell for metabolism. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-ZA-OlI" userLabel="Def Smooth ER">
+                                <rect key="frame" x="351" y="426" width="240" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The Smooth Endoplasmic Reticulum is the site where proteins and lipids are made. It helps the Golgi complex manufacture lysosomes</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw6-OL-GdS" userLabel="Def Cell Membrane">
+                                <rect key="frame" x="198" y="692" width="240" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The cell membrane is the organelle that seperates the cell from its enviornment. 
+
+It Transports proteins and other materials in and out of the cell. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH0-68-Sef" userLabel="Def Lysosome">
+                                <rect key="frame" x="132" y="549" width="240" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lysosomes are are spherical organelles with a highly acidic interior that contains degradative or lytic enzymes called hydrolases.
+
+Lysosomes serve as the waste disposal system of the cell, and the lytic enzymes present inside them are capable of digesting any type of macromolecule including proteins, lipids, carbohydrates and nucleic acids.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-ZG-Rca" userLabel="Def Nuclear Membrane">
+                                <rect key="frame" x="26" y="535" width="240" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The membrane that surrounds the Nucleolus and Nucleus. 
+
+The Nuclear membrane allows the proteins and DNA in and out of the Nucleus.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcE-ha-EeD" userLabel="Def Nucleus">
+                                <rect key="frame" x="46" y="359" width="240" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">It is the most important organelle as it contains the genetic material of the cell enclosed inside two concentric phospholipid bilayers collectively called nuclear envelope.
+
+It carries the information code in the form of DNA, It seperates the DNA from the rest of the cell. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="The nucleolus is  site where the ribosomes are made. It is surronded by the nuclear membrane" translatesAutoresizingMaskIntoConstraints="NO" id="psD-YP-6HX" userLabel="Def Nucleous">
+                                <rect key="frame" x="120" y="390" width="240" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-8Y-jsm" userLabel="Def Cytoplasm">
+                                <rect key="frame" x="182" y="534" width="240" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The cytoplasm is a semi fluid material surrounding organelles.
+
+The Cytoplasm offers support to the cell and speeds up inter-cellular travel.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="The Golgi vesicles carry the proteins and lipids to take them to other parts of the cell or to the outside of the cell." translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-cv-1kj" userLabel="Def Golgi Vesicle">
+                                <rect key="frame" x="204" y="375" width="240" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bm-RD-K0n" userLabel="Def Vacule">
+                                <rect key="frame" x="93" y="370" width="240" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">	Vacules are present in all plant cells but are not found in animal cells as often.          
+
+	Vacules store the food and water necessary for the survival of the cell as well as the waste before it gets transported out of the cell</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tck-DC-nyR" userLabel="Def Centrioles">
+                                <rect key="frame" x="182" y="370" width="240" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Centrioles are cylinder-shaped structures made up of microtubules, and are arranged orthogonal to each other, surrounded by a network of proteins called pericentriolar material or (PCM)
+
+Centrioles are the centers for microtubule nucleation. Centrioles assort chromosomes.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="The site of protein synthesis which has a large and a small subunit which synthesize materials into protein" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-cM-puH" userLabel="Def Rybosomes">
+                                <rect key="frame" x="251" y="295" width="240" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Es-ix-n5q" userLabel="Def Golgi Apparatus">
+                                <rect key="frame" x="238" y="400" width="240" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The Golgi apparatus is a huge network of membranous stacks called cisternae. These stacks are devided into four structural and functional components called cis-Golgi, medial-Golgi, endo-Golgi and trans-Golgi. 
+
+The golgi apparatus breaks down proteins to get an effective protein molicule. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="8qp-4k-ywN"/>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="9hT-Pl-9vo"/>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" symbolic="YES" id="SrW-vH-Wgg"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="250" id="VFC-dj-mBP"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="350" id="Zm2-cf-WrE"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="20" symbolic="YES" id="iui-m3-cBD"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Study" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="animalcell" destination="bwW-bn-d2y" id="Z7w-3K-jUH"/>
+                        <outlet property="cellmembrane" destination="Tey-fG-vP2" id="Nzz-rv-cv6"/>
+                        <outlet property="centrioles" destination="Bvk-T8-tSB" id="IGW-RP-W8O"/>
+                        <outlet property="cytoplasm" destination="BmW-y1-tdk" id="MR4-T3-nZC"/>
+                        <outlet property="defcellmembrane" destination="Fw6-OL-GdS" id="IA5-6m-Sin"/>
+                        <outlet property="defcentrioles" destination="tck-DC-nyR" id="OxY-D1-am7"/>
+                        <outlet property="defcytoplasm" destination="cl3-8Y-jsm" id="Uv9-rQ-4GV"/>
+                        <outlet property="defgolgiapparatus" destination="4Es-ix-n5q" id="VmA-Ql-p4I"/>
+                        <outlet property="defgolgivesicle" destination="gjQ-cv-1kj" id="5AB-w3-zlM"/>
+                        <outlet property="deflysosome" destination="kH0-68-Sef" id="wtg-7F-4Lu"/>
+                        <outlet property="defmotochondrion" destination="j55-Ia-Nab" id="y7l-vM-ujC"/>
+                        <outlet property="defnuclearmembrane" destination="7PK-ZG-Rca" id="oFD-fV-dOQ"/>
+                        <outlet property="defnucleous" destination="psD-YP-6HX" id="N9O-RN-slV"/>
+                        <outlet property="defnucleus" destination="dcE-ha-EeD" id="5jc-vh-VKH"/>
+                        <outlet property="defribosomes" destination="sVg-cM-puH" id="E4x-rU-OmG"/>
+                        <outlet property="defrougher" destination="EK6-83-QhT" id="Cba-sJ-h57"/>
+                        <outlet property="defsmoother" destination="lgL-ZA-OlI" id="qJw-EP-CcG"/>
+                        <outlet property="defvacule" destination="8bm-RD-K0n" id="hLy-T0-fj6"/>
+                        <outlet property="golgiapparatus" destination="j26-8W-zcS" id="vi9-We-JPa"/>
+                        <outlet property="golgivesicle" destination="dNW-xe-bpI" id="0xt-yg-VtU"/>
+                        <outlet property="hide" destination="A68-QL-yh3" id="Enb-7A-qEZ"/>
+                        <outlet property="lysosome" destination="qrw-hw-uhN" id="oNf-oK-3vY"/>
+                        <outlet property="motochondrion" destination="6Ku-1e-78f" id="sSE-Wf-lSe"/>
+                        <outlet property="nuclearmembrane" destination="1kj-1B-Wc8" id="OMG-ch-kDI"/>
+                        <outlet property="nucleous" destination="5sf-gA-wfV" id="LoK-jd-Lkf"/>
+                        <outlet property="nucleus" destination="1gH-kS-XgL" id="dx3-Cn-hUc"/>
+                        <outlet property="ribosomes" destination="8Q0-M8-Er8" id="x9e-xC-jKp"/>
+                        <outlet property="rougher" destination="kLX-JL-xa1" id="P51-cV-w9b"/>
+                        <outlet property="smoother" destination="hkC-e0-Sq7" id="b4V-ZC-SLL"/>
+                        <outlet property="vacule" destination="qpu-ks-f8q" id="i7M-uR-ae1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="150"/>
+            <point key="canvasLocation" x="1969" y="-954"/>
         </scene>
-        <!--class Prefix:identifier Second View Controller - Second-->
+        <!--Second View Controller - The Cell Test-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iMI-ga-jTe"/>
+                        <viewControllerLayoutGuide type="bottom" id="HSD-MY-MX5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OdC-58-LA6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="20" y="250" width="728" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="235" y="350" width="297" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="297" id="IyQ-6U-9uS"/>
-                                    <constraint firstAttribute="height" constant="70" id="OL4-RV-e9h"/>
-                                </constraints>
-                                <string key="text">Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-n5-O85">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                                <items>
-                                    <navigationItem id="WaP-O7-m87"/>
-                                </items>
-                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Was-Ct-fsB">
+                                <rect key="frame" x="290" y="240" width="189" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="50"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1Sb-YS-6bs" kind="push" id="udx-lN-tS4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="zEq-FU-wV5" secondAttribute="trailing" constant="20" symbolic="YES" id="1Sm-Ed-d0Z"/>
-                            <constraint firstItem="ej5-n5-O85" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="C9p-N0-R4o"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="235" id="ILQ-Iy-aLh"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="350" id="WdQ-18-vtZ"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="250" id="YLo-4G-u9r"/>
-                            <constraint firstItem="ej5-n5-O85" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="ZQW-8Y-bT4"/>
-                            <constraint firstItem="ej5-n5-O85" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="dYc-7R-70W"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" symbolic="YES" id="uRE-52-21w"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="The Cell Test" id="BE3-Jp-qzr"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="1284"/>
+            <point key="canvasLocation" x="2120" y="1868"/>
+        </scene>
+        <!--View Controller - Question 1-->
+        <scene sceneID="R6H-yV-Anf">
+            <objects>
+                <viewController id="1Sb-YS-6bs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IKQ-db-LNX"/>
+                        <viewControllerLayoutGuide type="bottom" id="mST-sv-8Pu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1G-he-zXj">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Organelle contains ribosomes used to transport proteins and other materials throughout the cell" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="478" translatesAutoresizingMaskIntoConstraints="NO" id="kRx-Dh-KPN">
+                                <rect key="frame" x="145" y="142" width="478" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G41-l8-6xl">
+                                <rect key="frame" x="90" y="319" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Ribosomes">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Puy-7R-SYr" kind="push" id="YPn-co-Ymv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-Gn-Khl">
+                                <rect key="frame" x="90" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Rough E.R">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fmr-W7-2qK" kind="push" id="bNd-DN-gFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpF-kZ-npV">
+                                <rect key="frame" x="460" y="319" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Vacuole">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Puy-7R-SYr" kind="push" id="6oa-tZ-4ug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi2-oc-oqg">
+                                <rect key="frame" x="460" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Lysosome">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Puy-7R-SYr" kind="push" id="PPm-Cq-YpJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Question 1" id="mhi-oc-8LL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gge-fw-hNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3147" y="1868"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XmD-SK-84n">
+            <objects>
+                <viewController id="Puy-7R-SYr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ogP-1A-b2p"/>
+                        <viewControllerLayoutGuide type="bottom" id="yAT-hk-Gnw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K1V-d4-ZCU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-vR-umW">
+                                <rect key="frame" x="0.0" y="20" width="806" height="969"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sDC-eY-PvM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lom-F4-cCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2177" y="3100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pf0-CD-oFh">
+            <objects>
+                <viewController id="fmr-W7-2qK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kjq-xW-bD4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oab-LT-RRo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="05C-ZK-M4z">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZC-39-lD4">
+                                <rect key="frame" x="0.0" y="20" width="768" height="984"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="Correct">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yce-9y-A6c" kind="push" id="FQb-zW-DjN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dAI-yI-nBI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1v-73-yxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3232" y="3143"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -115,21 +559,354 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="IcP-CK-7mc" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="718"/>
+            <point key="canvasLocation" x="1047" y="774"/>
+        </scene>
+        <!--Navigation Controller - Test-->
+        <scene sceneID="PkY-yg-2iT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IcP-CK-7mc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Test" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o78-hV-Zcw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="1Js-Yo-v0f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZ3-Mn-ZQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="522"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wsy-iY-SCT">
+            <objects>
+                <viewController id="uyQ-X9-QXf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DSo-1P-uj4"/>
+                        <viewControllerLayoutGuide type="bottom" id="RgB-tI-URy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kna-tn-Myb">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaY-O3-Vce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller - Question 2-->
+        <scene sceneID="pXh-KM-cqe">
+            <objects>
+                <viewController id="yce-9y-A6c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XFg-gq-hx3"/>
+                        <viewControllerLayoutGuide type="bottom" id="VGd-di-izV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xph-fp-H8H">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="541" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-EN-MhE">
+                                <rect key="frame" x="114" y="144" width="541" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">	What Organelle is present in all plant cells but are not found in animal cells as often. And stores the food and water necessary for the survival of the cell</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9p-0Q-BHR">
+                                <rect key="frame" x="90" y="319" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Vacuole">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hzi-my-dY8" kind="push" id="TdB-ju-Qnh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zC-U7-jbo">
+                                <rect key="frame" x="90" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Cytoplasm">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rfT-KN-0tp" kind="push" id="UHq-WR-CEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-0Y-9fq">
+                                <rect key="frame" x="460" y="319" width="228" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Golgi Apparatus">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rfT-KN-0tp" kind="push" id="VH2-cH-xh6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-CJ-QaP">
+                                <rect key="frame" x="460" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Mitochondrion">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rfT-KN-0tp" kind="push" id="1e3-Se-YmB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Question 2" id="NOE-IL-Flf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8h-Yj-g9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="4276"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4IY-Un-Jga">
+            <objects>
+                <viewController id="rfT-KN-0tp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wuh-e0-ysz"/>
+                        <viewControllerLayoutGuide type="bottom" id="zsR-FX-eWH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CuV-Fg-9YG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGM-y8-X3Z">
+                                <rect key="frame" x="0.0" y="20" width="806" height="969"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xvt-4x-uje" kind="push" id="hfb-2a-UXL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8HA-xv-u3L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Su9-cl-qZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2213" y="4284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GoO-z4-eeK">
+            <objects>
+                <viewController id="Hzi-my-dY8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="70E-qP-Peb"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7J-2A-XWh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qmW-qP-sqn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmM-4l-8ao">
+                                <rect key="frame" x="0.0" y="20" width="768" height="984"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="Correct">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xvt-4x-uje" kind="push" id="XgP-6B-oq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KYP-fU-w2w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWr-uP-CX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084" y="4259"/>
+        </scene>
+        <!--View Controller - Question 3-->
+        <scene sceneID="Dvt-FA-yLA">
+            <objects>
+                <viewController id="xvt-4x-uje" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0lU-nO-sMU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Taq-Na-FZt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3kz-jy-m5O">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="478" translatesAutoresizingMaskIntoConstraints="NO" id="wXl-IL-s3f">
+                                <rect key="frame" x="145" y="142" width="478" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">What organelle is a semi fluid material surrounding organelles, that offers support to the cell and speeds up inter-cellular travel</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-xZ-m0y">
+                                <rect key="frame" x="90" y="319" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Centrioles">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cv7-BI-21M" kind="push" id="1Jf-iZ-Yr9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-su-kcw">
+                                <rect key="frame" x="90" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Smooth E.R">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cv7-BI-21M" kind="push" id="ZxY-dY-QCi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y4h-YX-haF">
+                                <rect key="frame" x="460" y="319" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="  Nuclear Membrane">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cv7-BI-21M" kind="push" id="QHN-6d-mll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-fx-uvn">
+                                <rect key="frame" x="460" y="608" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Cytoplasm">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wTX-Xj-RgG" kind="push" id="7Pz-Xb-8N5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Question 3" id="cSf-BF-hit"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EoJ-nf-iMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="5452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SrB-NM-1tO">
+            <objects>
+                <viewController id="Cv7-BI-21M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjZ-X9-ZoG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dtl-pV-lST"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="alF-9a-FWV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUo-LT-35U">
+                                <rect key="frame" x="0.0" y="20" width="806" height="969"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eJW-0G-cJV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEn-ys-WeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207" y="5482"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nc6-NT-LNJ">
+            <objects>
+                <viewController id="wTX-Xj-RgG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XrL-HG-bTG"/>
+                        <viewControllerLayoutGuide type="bottom" id="YUJ-qh-IW2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qcK-77-1n1">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQr-9g-Aq9">
+                                <rect key="frame" x="0.0" y="20" width="768" height="984"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="Correct">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O9F-Sh-0cp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5K-kf-SGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3098" y="5423"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="animalcell.jpg" width="2828" height="2828"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YPn-co-Ymv"/>
+        <segue reference="VH2-cH-xh6"/>
+        <segue reference="hfb-2a-UXL"/>
+        <segue reference="ZxY-dY-QCi"/>
+    </inferredMetricsTieBreakers>
 </document>

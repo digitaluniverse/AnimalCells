@@ -16,12 +16,16 @@
 		A276718C18D2A385002F4D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A276718A18D2A385002F4D19 /* Main.storyboard */; };
 		A276718F18D2A385002F4D19 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A276718E18D2A385002F4D19 /* FirstViewController.m */; };
 		A276719218D2A385002F4D19 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A276719118D2A385002F4D19 /* SecondViewController.m */; };
-		A276719418D2A385002F4D19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A276719318D2A385002F4D19 /* Images.xcassets */; };
+		A276719418D2A385002F4D19 /* Imagesd.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A276719318D2A385002F4D19 /* Imagesd.xcassets */; };
 		A276719B18D2A386002F4D19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276719A18D2A386002F4D19 /* XCTest.framework */; };
 		A276719C18D2A386002F4D19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276717818D2A385002F4D19 /* Foundation.framework */; };
 		A276719D18D2A386002F4D19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276717C18D2A385002F4D19 /* UIKit.framework */; };
 		A27671A518D2A386002F4D19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A27671A318D2A386002F4D19 /* InfoPlist.strings */; };
 		A27671A718D2A386002F4D19 /* AnimalCellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A27671A618D2A386002F4D19 /* AnimalCellsTests.m */; };
+		A27671B118D2A465002F4D19 /* dreamstime_xl_29859935 (iOS icons) in Resources */ = {isa = PBXBuildFile; fileRef = A27671B018D2A465002F4D19 /* dreamstime_xl_29859935 (iOS icons) */; };
+		A27671B318D2A475002F4D19 /* animalcell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A27671B218D2A475002F4D19 /* animalcell.jpg */; };
+		A27671B518D2A484002F4D19 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A27671B418D2A484002F4D19 /* launch.jpg */; };
+		A27671B718D2A810002F4D19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27671B618D2A810002F4D19 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +54,16 @@
 		A276718E18D2A385002F4D19 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		A276719018D2A385002F4D19 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A276719118D2A385002F4D19 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		A276719318D2A385002F4D19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A276719318D2A385002F4D19 /* Imagesd.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagesd.xcassets; sourceTree = "<group>"; };
 		A276719918D2A386002F4D19 /* AnimalCellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalCellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276719A18D2A386002F4D19 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A27671A218D2A386002F4D19 /* AnimalCellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimalCellsTests-Info.plist"; sourceTree = "<group>"; };
 		A27671A418D2A386002F4D19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A27671A618D2A386002F4D19 /* AnimalCellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalCellsTests.m; sourceTree = "<group>"; };
+		A27671B018D2A465002F4D19 /* dreamstime_xl_29859935 (iOS icons) */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "dreamstime_xl_29859935 (iOS icons)"; sourceTree = "<group>"; };
+		A27671B218D2A475002F4D19 /* animalcell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animalcell.jpg; sourceTree = "<group>"; };
+		A27671B418D2A484002F4D19 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		A27671B618D2A810002F4D19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +123,18 @@
 		A276717E18D2A385002F4D19 /* AnimalCells */ = {
 			isa = PBXGroup;
 			children = (
+				A27671B418D2A484002F4D19 /* launch.jpg */,
+				A27671B218D2A475002F4D19 /* animalcell.jpg */,
+				A27671B018D2A465002F4D19 /* dreamstime_xl_29859935 (iOS icons) */,
 				A276718718D2A385002F4D19 /* AppDelegate.h */,
 				A276718818D2A385002F4D19 /* AppDelegate.m */,
 				A276718A18D2A385002F4D19 /* Main.storyboard */,
 				A276718D18D2A385002F4D19 /* FirstViewController.h */,
 				A276718E18D2A385002F4D19 /* FirstViewController.m */,
+				A27671B618D2A810002F4D19 /* Images.xcassets */,
 				A276719018D2A385002F4D19 /* SecondViewController.h */,
 				A276719118D2A385002F4D19 /* SecondViewController.m */,
-				A276719318D2A385002F4D19 /* Images.xcassets */,
+				A276719318D2A385002F4D19 /* Imagesd.xcassets */,
 				A276717F18D2A385002F4D19 /* Supporting Files */,
 			);
 			path = AnimalCells;
@@ -233,9 +245,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A276719418D2A385002F4D19 /* Images.xcassets in Resources */,
+				A276719418D2A385002F4D19 /* Imagesd.xcassets in Resources */,
+				A27671B118D2A465002F4D19 /* dreamstime_xl_29859935 (iOS icons) in Resources */,
+				A27671B718D2A810002F4D19 /* Images.xcassets in Resources */,
+				A27671B518D2A484002F4D19 /* launch.jpg in Resources */,
 				A276718318D2A385002F4D19 /* InfoPlist.strings in Resources */,
 				A276718C18D2A385002F4D19 /* Main.storyboard in Resources */,
+				A27671B318D2A475002F4D19 /* animalcell.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
